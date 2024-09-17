@@ -59,6 +59,14 @@ services:
   packages:
   - name: WmPublic
     version: 11.0.0.0.1018
+- serviceName: project.demoavse.integrations:db_config
+  packages:
+  - name: DemoavseProject
+    version: "1.0"
+- serviceName: project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:db_con
+  packages:
+  - name: DemoavseProject
+    version: "1.0"
 configurationVariables:
   ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
