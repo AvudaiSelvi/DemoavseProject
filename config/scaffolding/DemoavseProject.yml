@@ -7,3 +7,102 @@ packages:
   gitUrl: https://github.com/AvudaiSelvi/DemoavseProject
   gitUsername: AvudaiSelvi
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
+services:
+- serviceName: project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: DemoavseProject
+    version: "1.0"
+- serviceName: project.demoavse.integrations:generateQuotation
+  packages:
+  - name: DemoavseProject
+    version: "1.0"
+- serviceName: project.demoavse.integrations:getCustomerById
+  packages:
+  - name: DemoavseProject
+    version: "1.0"
+- serviceName: pub.client:http
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
+- serviceName: pub.io:bytesToStream
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
+- serviceName: pub.json:jsonStreamToDocument
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
+- serviceName: project.demoavse.integrations:getProductById
+  packages:
+  - name: DemoavseProject
+    version: "1.0"
+- serviceName: pub.string:isNumber
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
+- serviceName: pub.math:multiplyFloats
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
+- serviceName: pub.math:subtractFloats
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
+- serviceName: pub.date:currentNanoTime
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
+- serviceName: pub.flow:getLastFailureCaught
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
+configurationVariables:
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "5432"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : postgres
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : POSTGRESQL
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : postgres
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}QtRsXYLMlRx6MUIhITGFDg=="
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : org.postgresql.ds.PGSimpleDataSource
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : mydbinstance.cxounmjc084y.us-east-1.rds.amazonaws.com
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : initial_db
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.DemoavseProject.project.demoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
