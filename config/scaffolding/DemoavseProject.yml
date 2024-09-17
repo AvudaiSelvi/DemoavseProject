@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: DemoavseProject
+  gitServerName: Demoavse
+  gitUrl: https://github.com/AvudaiSelvi/DemoavseProject
+  gitUsername: AvudaiSelvi
+  gitBranch: main
